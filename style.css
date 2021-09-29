@@ -1,41 +1,79 @@
 #top-bar {
-    background-color: #10002b;
+    background-color: #070014;
     width: 100%;
     display: flex;
-    color: white;
-    justify-content: left;
+    color: rgb(198, 198, 198);
+    justify-content: left space-between;
     text-transform: uppercase;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: medium;
+    font-size: larger;
+    border-bottom: 7px solid rgb(164, 43, 164);
+    border-top: 6px solid #070014;
 }
 #top-bar div{
     margin-right: 10px;
 }
 header {
-    border: 3px solid red;
+    border: 15px solid white;
+    border-left: 1px solid rgb(224, 224, 224);
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    font-size: 1.5rem;
+    color: rgb(114, 111, 111);
+
 
 }
 
+
+
+
+header, nav, nav div, main {
+    font-family: 'Roboto',sans-serif;
+}
+
 nav {
-    border: 3px solid purple;
+    border: 25px solid white;
     display: flex;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 nav div {
     margin-right: 10px;
 }
 
 main {
+    border-top: 1px solid rgb(224, 224, 224);
+
     width: 100%;
     display: grid;
-    grid-template-columns: 640px 1fr 1fr;
-    grid-template-rows: 335px 335px;
+    grid-template-columns: 710px 0.8fr 1fr;
+    grid-template-rows: 340px 340px;
     grid-template-areas: 
         "big story1 story2"
         "big story3 story4"
-    ;
+    
 }
 
 #big {
     grid-area: big;
+    border-top: 45px solid white;
+    border-left: 25px solid white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgb(148, 37, 148);
 }
+
+#story1 {
+    grid-area: story1;
+    border-top: 43px solid white;
+    border-left: 23px solid white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgb(148, 37, 148);
+}
+
+
