@@ -1,0 +1,41 @@
+#top-bar {
+    background-color: #10002b;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: left;
+    text-transform: uppercase;
+}
+#top-bar div{
+    margin-right: 10px;
+}
+header {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav {
+    border: 3px solid purple;
+    display: flex;
+    text-transform: uppercase;
+}
+nav div {
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 640px 1fr 1fr;
+    grid-template-rows: 335px 335px;
+    grid-template-areas: 
+        "big story1 story2"
+        "big story3 story4"
+    ;
+}
+
+#big {
+    grid-area: big;
+}
